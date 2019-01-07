@@ -1,0 +1,32 @@
+
+
+CREATE DATABASE UserManagement DEFAULT CHARACTER SET utf8;
+
+USE UserManagement;
+
+CREATE TABLE user (id SERIAL PRIMARY KEY UNIQUE NOT NULL AUTO_INCREMENT , 
+					login_id varchar(255) UNIQUE NOT NULL, 
+					name varchar(255) NOT NULL,
+					birth_date DATE NOT NULL,
+					password varchar(255)NOT NULL,
+ 					create_date DATETIME NOT NULL,
+ 					update_date DATETIME NOT NULL);
+ 					
+ 					
+
+	INSERT INTO user VALUES(1,'admin','ä«óùé“','1993/12/12','password','2018/12/26 18:03','2018/12/26 18:03');
+	
+SELECT * FROM user;
+
+ 
+
+
+INSERT INTO user VALUES(3,'isaku','êŒà‰à–ê∑','1993/12/12','password','2018/12/26 18:03','2018/12/26 18:03');
+	
+SELECT * FROM user;
+
+
+
+
+
+
