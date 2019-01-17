@@ -19,12 +19,14 @@ CREATE TABLE user (id SERIAL PRIMARY KEY UNIQUE NOT NULL AUTO_INCREMENT ,
 SELECT * FROM user;
 
  
-
-
 INSERT INTO user VALUES(3,'isaku','êŒà‰à–ê∑','1993/12/12','password','2018/12/26 18:03','2018/12/26 18:03');
 	
 SELECT * FROM user;
 
+
+è⁄ç◊É{É^Éì
+
+INSERT INTO user(login_id,password,name,birth_date,create_date,update_date) VALUES (4,11,'aiko','1992-11-16',now(),now());
 
 
 
